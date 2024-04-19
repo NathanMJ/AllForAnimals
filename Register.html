@@ -36,11 +36,9 @@
             var email = document.getElementById('email').value;
 
             if (username && password && email && isValidEmail(email)) {
-                // Afficher le message "Register successfully!"
                 var successMessage = document.getElementById('successMessage');
                 successMessage.style.display = 'block';
 
-                // Après 3 secondes, masquer le message et rediriger vers la nouvelle page
                 setTimeout(function() {
                     successMessage.style.display = 'none';
                     window.location.href = "Login.html";
